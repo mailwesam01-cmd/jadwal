@@ -1,6 +1,21 @@
 {
   "name": "jadwal-monorepo",
   "version": "1.0.0",
+  "description": "Smart Course-Registration & Timetable Optimization Platform for Jordanian University Students (Web, Mobile & Backend)",
+  "keywords": [
+    "timetable-generator",
+    "course-registration",
+    "schedule-optimizer",
+    "university-scheduling",
+    "backtracking-algorithm",
+    "jordanian-universities",
+    "edtech",
+    "monorepo",
+    "nestjs",
+    "react19",
+    "flutter",
+    "typescript"
+  ],
   "private": true,
   "workspaces": [
     "apps/*",

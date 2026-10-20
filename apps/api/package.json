@@ -1,7 +1,7 @@
 {
   "name": "api",
   "version": "0.0.1",
-  "description": "",
+  "description": "Jadwal REST API backend built with NestJS & TypeORM for conflict-free timetable generation",
   "author": "",
   "private": true,
   "license": "UNLICENSED",
