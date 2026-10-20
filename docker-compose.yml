@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: jadwal_db
+    environment:
+      POSTGRES_USER: jadwal_user
+      POSTGRES_PASSWORD: jadwal_password
+      POSTGRES_DB: jadwal_db
+    ports:
+      - '5432:5432'
+    volumes:
+      - jadwal_pgdata:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: jadwal_redis
+    ports:
+      - '6379:6379'
+    volumes:
+      - jadwal_redisdata:/data
+
+volumes:
+  jadwal_pgdata:
+  jadwal_redisdata:

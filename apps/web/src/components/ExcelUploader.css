@@ -1,0 +1,49 @@
+.excel-uploader-container {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.drop-zone {
+  border: 2px dashed var(--color-primary-light);
+  border-radius: var(--radius-md);
+  padding: 32px 16px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.drop-zone:hover, .drop-zone.dragging {
+  background-color: rgba(118, 120, 237, 0.1);
+  border-color: var(--color-primary);
+  transform: scale(1.01);
+}
+
+.drop-zone-icon {
+  color: var(--color-primary-light);
+  transition: color var(--transition-fast);
+}
+
+.drop-zone:hover .drop-zone-icon, .drop-zone.dragging .drop-zone-icon {
+  color: var(--color-primary);
+}
+
+.drop-zone-text {
+  font-size: 1rem;
+  color: var(--color-ink);
+}
+
+.uploader-error {
+  margin-top: 8px;
+  color: var(--color-conflict);
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: rgba(243, 91, 4, 0.1);
+  padding: 8px;
+  border-radius: var(--radius-sm);
+}
